@@ -6,29 +6,41 @@
     box-sizing: border-box;
     text-decoration: none;
 }
-.logo {
-    color: black;
-    width: 20px;
-}
 
-.navigatie .menu li {
-    /*display: flex;*/
-    width: 20px;
-}
-.navigatie .menu ul {
-    width: 20px;
-}
+/*het stylen van de navigatie bar boven aan in beeld*/
 .navigatie {
-    background: gray;
+    background-color: #333;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: fixed;
-    width 100px;
-    font-family: 'Ubuntu', sans-serif;
-
+    width: 100%;
+    /*top: 0;*/
 }
 
+.logo a {
+    color: white;
+    text-decoration: none;
+    /*font-size: 1.5rem;*/
+    font-size: 25px;
+    font-weight: bold;
+}
 
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+/*padding maakt de boxen van de links groter*/
+.menu li a {
+    color: white;
+    /*text-decoration: none;*/
+    padding: 8px 15px;
+    /*transition: all 0.3s ease;*/
+}
 
-
-.navigatie .menu a{
-    color: blueviolet;
+.menu li a:hover {
+    background-color: #555;
+    border-radius: 5px;
 }
