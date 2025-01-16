@@ -1,29 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
 }
 
-/*het stylen van de navigatie bar boven aan in beeld*/
 .navigatie {
     background-color: #333;
-    padding: 15px 30px;
+    padding: 15px 0; /* Verwijderd horizontale padding omdat die nu in max-width zit */
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    width: 100%;
-    /*top: 0;*/
 }
 
 .logo a {
     color: white;
     text-decoration: none;
-    /*font-size: 1.5rem;*/
-    font-size: 25px;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
@@ -32,10 +35,10 @@
     list-style: none;
     gap: 30px;
 }
-/*padding maakt de boxen van de links groter*/
+
 .menu li a {
     color: white;
-    /*text-decoration: none;*/
+    text-decoration: none;
     padding: 8px 15px;
     /*transition: all 0.3s ease;*/
 }
@@ -43,4 +46,82 @@
 .menu li a:hover {
     background-color: #555;
     border-radius: 5px;
+    
 }
+
+/*begin stylen home pagina*/
+
+.home {
+    display: flex;
+
+}
+.text-1 {
+    color: black;
+    margin-top: 300%;
+
+}
+
+/*css voor about me stukje*/
+
+
+.aboutme {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.aboutme h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.about-text {
+    flex: 1;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+.skills {
+    flex: 1;
+}
+
+.skills h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.skill {
+    margin-bottom: 15px;
+}
+
+.skill span {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+.skill-bar {
+    background-color: #ddd;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.skill-fill {
+    background-color: #4caf50;
+    height: 100%;
+    border-radius: 5px;
+}
+
