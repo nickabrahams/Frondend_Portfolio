@@ -74,7 +74,7 @@
 .menu li a:hover {
     background-color: #555;
     border-radius: 5px;
-    
+
 }
 
 /*begin stylen home pagina*/
@@ -115,8 +115,8 @@ body {
 .box {
     position: relative;
     background-color: #fff;
-    width: 150px;
-    height: 150px;
+    width: 120px; /* Iets langere standaardgrootte */
+    height: 100px; /* Teruggebracht naar een kortere hoogte */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     overflow: hidden;
@@ -180,4 +180,3 @@ body {
 }
 
 /*test*/
-
