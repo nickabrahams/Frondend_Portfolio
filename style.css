@@ -85,6 +85,10 @@
     justify-content: center;
     min-height: 100vh;
     padding: 50px 20px;
+    background-image: url('home_background_1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 body {
@@ -97,13 +101,13 @@ body {
 .home-inhoud h1 {
     font-size: 36px;
     margin-bottom: 10px;
-    color: #333;
+    color: black;
 }
 
 .home-inhoud p {
     font-size: 18px;
     margin-bottom: 30px;
-    color: #666;
+    color: black;
 }
 
 .boxes {
@@ -116,7 +120,7 @@ body {
     position: relative;
     background-color: #fff;
     width: 120px; /* Iets langere standaardgrootte */
-    height: 100px; /* Teruggebracht naar een kortere hoogte */
+    height: 60px; /* Teruggebracht naar een kortere hoogte */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     overflow: hidden;
@@ -158,19 +162,20 @@ body {
 
 /*css voor about me stukje*/
 
-.aboutme {
-    background-color: #f9f9f9;
+.opleiding {
+    /*background-color: #f9f9f9;*/
+    background-color: #d6d5d1;
     padding: 200px 0;
 }
 
-.aboutme h2 {
+.opleiding h2 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 20px;
     color: #333;
 }
 
-.about-text {
+.opleiding-txt {
     max-width: 800px;
     margin: 0 auto;
     font-size: 1rem;
@@ -179,4 +184,83 @@ body {
     text-align: justify;
 }
 
-/*test*/
+
+/*css voor vaardigheden stukje*/
+
+.vaardigheden {
+    background-color: #f5f5f5;
+    padding: 150px 0;
+}
+
+.vaardigheden h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.vaardigheden-lijst {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 137px;
+    align-items: flex-start;
+}
+
+.vaardigheid {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+    min-height: 180px;
+}
+
+.vaardigheid h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.vaardigheid p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 40px;
+}
+.skills h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+.skill {
+    margin-bottom: 15px;
+}
+.skill span {
+    display: inline-block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #444;
+    width: auto;
+    text-align: left;
+    margin-left: 250px; /* Zorgt ervoor dat de tekst dichter bij de balk komt */
+}
+.skill-bar {
+    background-color: #ddd;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 250px; /* Aangepaste marges voor betere uitlijning met de tekst */
+}
+.skill-fill {
+    background-color: #4caf50;
+    height: 100%;
+    border-radius: 5px;
+}
