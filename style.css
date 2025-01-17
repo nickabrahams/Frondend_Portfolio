@@ -7,13 +7,30 @@
 }
 
 /*voor het weghalenn van de scrolbar*/
-html {
-    scrollbar-width: none;
+/*html {*/
+/*    scrollbar-width: none;*/
+/*}*/
+/*body::-webkit-scrollbar {*/
+/*    display: none;*/
+/*}*/
+
+::-webkit-scrollbar {
+    width: .7em;
+
+}
+::-webkit-scrollbar-track {
+    background: hsl(0, 0%, 73%);
+    border-radius: 100vw;
+    margin-block: .7em;
+}
+::-webkit-scrollbar-thumb {
+    background: hsl(0, 0%, 20%);
+    border-radius: 100vw;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: hsl(0, 0%, 25%)
 }
 
-body::-webkit-scrollbar {
-    display: none;
-}
 
 /*dit is voor de navigatie bar aan de bovenkant*/
 .navigatie {
@@ -71,7 +88,7 @@ body::-webkit-scrollbar {
 }
 
 body {
-    overflow-y: scroll;
+    /*overflow-y: scroll;*/
     margin: 0;
     font-family: Arial, sans-serif;
     /*background-color: #f4f4f9;*/
