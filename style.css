@@ -27,6 +27,7 @@ html{
 }
 
 
+
 /*dit is voor de navigatie bar aan de bovenkant*/
 .navigatie {
     background-color: #333;
@@ -266,7 +267,7 @@ body {
 /* CSS voor projecten sectie */
 .projecten {
     background-color: #d6d5d1;
-    padding: 150px 0;
+    padding: 100px 0;
 }
 
 .projecten h2 {
@@ -282,6 +283,15 @@ body {
     gap: 100px; /* Grotere afstand tussen de projecten */
 }
 
+.project {
+    position: relative;
+    width: 400px; /* Grotere breedte */
+    height: 300px; /* Grotere hoogte */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
 .project {
     position: relative;
     width: 400px; /* Grotere breedte */
