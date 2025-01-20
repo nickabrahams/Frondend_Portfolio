@@ -5,6 +5,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 ::-webkit-scrollbar {
     width: .7em;
@@ -79,7 +82,7 @@
     justify-content: center;
     min-height: 100vh;
     padding: 50px 20px;
-    background-image: url('home_background_1.png');
+    background-image: url('project_frontend_img/home_background_1.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
