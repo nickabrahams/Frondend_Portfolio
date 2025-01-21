@@ -183,7 +183,11 @@ html, body {
     .menu-btn.active .bar:nth-child(3) {
         transform: rotate(45deg) translate(-5px, -6px);
     }
+
+
 }
+
+
 
 /*begin stylen home pagina*/
 .home {
@@ -400,6 +404,59 @@ body {
     height: 100%;
     border-radius: 5px;
 }
+
+
+@media screen and (max-width: 768px) {
+    /* Bestaande mobile styles behouden... */
+
+    .vaardigheden-lijst {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 kolommen */
+        gap: 15px; /* Kleinere ruimte tussen boxes */
+        padding: 0 15px; /* Padding aan de zijkanten */
+    }
+
+    .vaardigheid {
+        width: 100%; /* Volledige breedte binnen grid cell */
+        aspect-ratio: 1/1; /* Maakt de boxes vierkant */
+        min-height: unset; /* Verwijder de min-height */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0; /* Verwijder eventuele margins */
+    }
+
+    .vaardigheid h3 {
+        font-size: 1rem; /* Iets kleinere tekst */
+        margin-bottom: 8px;
+    }
+
+    .vaardigheid p {
+        font-size: 0.9rem;
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    /* Skills balkjes aanpassen */
+    .skill {
+        margin: 0 15px 15px 15px;
+    }
+
+    .skill span {
+        margin-left: 0;
+        text-align: left;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .skill-bar {
+        margin: 0;
+        width: 100%;
+    }
+}
+
+
 
 
 /* CSS voor projecten sectie */
