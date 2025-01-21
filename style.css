@@ -417,14 +417,15 @@ body {
     }
 
     .vaardigheid {
-        width: 100%; /* Volledige breedte binnen grid cell */
-        aspect-ratio: 1/1; /* Maakt de boxes vierkant */
-        min-height: unset; /* Verwijder de min-height */
+        width: 100%;
+        aspect-ratio: 1/1; /* Dit zorgt voor vierkante boxes */
+        min-height: unset;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 0; /* Verwijder eventuele margins */
+        margin: 0;
+        height: 150px; /* Vaste hoogte voor alle boxes */
     }
 
     .vaardigheid h3 {
@@ -528,6 +529,27 @@ body {
 
 .project:hover .overlay {
     opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    /* Bestaande mobile styles behouden... */
+
+    .projecten-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px; /* Kleinere ruimte tussen projecten in mobile view */
+    }
+
+    .project {
+        width: 90%; /* Iets smaller dan full width voor mooiere weergave */
+        height: 350px; /* Aangepaste hoogte voor mobiel */
+    }
+
+    .project .overlay p {
+        font-size: 0.9rem; /* Optioneel: tekst iets kleiner maken */
+        line-height: 1.4; /* Optioneel: regel hoogte iets aanpassen */
+        padding: 15px; /* Wat padding toevoegen voor betere leesbaarheid */
+    }
 }
 
 /* CSS voor contact sectie */
