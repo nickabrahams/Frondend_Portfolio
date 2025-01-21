@@ -106,6 +106,12 @@ html, body {
         width: 100%;
         padding: 0 15px;
         box-sizing: border-box;
+        text-align: center;
+    }
+
+    .home-inhoud h1 {
+        width: 100%;
+        text-align: center;
     }
 
     .boxes {
