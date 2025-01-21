@@ -9,6 +9,11 @@ html{
     scroll-behavior: smooth;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 ::-webkit-scrollbar {
     width: .7em;
 
@@ -39,12 +44,14 @@ html{
 }
 
 .max-width {
-    max-width: 1300px;
-    padding: 0 80px;
+    max-width: 100%;
+    width: 100%;
+    padding: 0 20px;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-sizing: border-box; /* Belangrijk! */
 }
 
 .logo a {
@@ -52,14 +59,14 @@ html{
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: bold;
-    margin-left: 30px; /* Breng de logo tekst meer naar links */
+    margin-left: 30px;
 }
 
 .menu {
     display: flex;
     list-style: none;
     gap: 30px;
-    margin-right: 30px; /* Breng het menu meer naar rechts */
+    margin-right: 30px;
 }
 
 .menu li a {
@@ -72,7 +79,104 @@ html{
 .menu li a:hover {
     background-color: #555;
     border-radius: 5px;
+}
 
+/* Hamburger menu button */
+.menu-btn {
+    display: none;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .max-width {
+        padding: 0 15px;
+    }
+
+    .home-inhoud {
+        width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+
+    .boxes {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .box {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .menu {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+
+
+
+    .max-width {
+        padding: 0 20px;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .menu {
+        position: fixed;
+        top: 60px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 60px);
+        background-color: #333;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        margin: 0;
+        padding: 20px 0;
+        transition: all 0.3s ease;
+    }
+
+    .menu.active {
+        left: 0;
+    }
+
+    .menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu li a {
+        display: block;
+        padding: 15px 0;
+    }
+
+    /* Hamburger menu animation */
+    .menu-btn.active .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .menu-btn.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-btn.active .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
 }
 
 /*begin stylen home pagina*/
@@ -82,11 +186,13 @@ html{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    padding: 50px 20px;
+    padding: 50px 0;
     background-image: url('project_frontend_img/home_background_1.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -156,31 +262,57 @@ body {
 }
 
 
-/*css voor about me stukje*/
+/*css voor opleiding stukje*/
 
 .opleiding {
     background-color: #d6d5d1;
+    padding: 100px 0 50px 0;
+    width: 100%;
+    overflow-x: hidden;
+}
 
-
-    padding: 200px 0;
+.opleiding .max-width {
+    flex-direction: column;
+    align-items: center;
 }
 
 .opleiding h2 {
     text-align: center;
     font-size: 2.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     color: #333;
+    width: 100%;
 }
 
 .opleiding-txt {
     max-width: 800px;
+    width: 100%;
+    padding: 0 20px;
     margin: 0 auto;
     font-size: 1rem;
     line-height: 1.8;
     color: #555;
     text-align: justify;
+    box-sizing: border-box;
 }
 
+/* Media query voor mobiel */
+@media screen and (max-width: 768px) {
+    .opleiding {
+        padding: 80px 0 40px 0;
+    }
+
+    .opleiding h2 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .opleiding-txt {
+        padding: 0 15px;
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+}
 
 /*css voor vaardigheden stukje*/
 
@@ -396,4 +528,3 @@ body {
     width: 50px;
     height: 50px;
 }
-
