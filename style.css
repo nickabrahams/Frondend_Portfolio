@@ -94,99 +94,6 @@ html, body {
     transition: all 0.3s ease;
 }
 
-/* Responsive styles */
-@media screen and (max-width: 768px) {
-    .max-width {
-        padding: 0 15px;
-    }
-
-    .home-inhoud {
-        width: 100%;
-        padding: 0 15px;
-        box-sizing: border-box;
-        text-align: center;
-    }
-
-    .home-inhoud h1 {
-        width: 100%;
-        text-align: center;
-    }
-
-    .boxes {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    .box {
-        width: 100%;
-        max-width: 300px;
-    }
-
-    .menu {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-
-
-
-
-    .max-width {
-        padding: 0 20px;
-    }
-
-    .menu-btn {
-        display: block;
-    }
-
-    .menu {
-        position: fixed;
-        top: 60px;
-        left: -100%;
-        width: 100%;
-        height: calc(100vh - 60px);
-        background-color: #333;
-        flex-direction: column;
-        align-items: center;
-        gap: 0;
-        margin: 0;
-        padding: 20px 0;
-        transition: all 0.3s ease;
-    }
-
-    .menu.active {
-        left: 0;
-    }
-
-    .menu li {
-        width: 100%;
-        text-align: center;
-    }
-
-    .menu li a {
-        display: block;
-        padding: 15px 0;
-    }
-
-    /* Hamburger menu animation */
-    .menu-btn.active .bar:nth-child(1) {
-        transform: rotate(-45deg) translate(-5px, 6px);
-    }
-
-    .menu-btn.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .menu-btn.active .bar:nth-child(3) {
-        transform: rotate(45deg) translate(-5px, -6px);
-    }
-
-
-}
-
-
-
 /*begin stylen home pagina*/
 .home {
     display: flex;
@@ -229,8 +136,8 @@ body {
 .box {
     position: relative;
     background-color: #fff;
-    width: 120px; /* Iets langere standaardgrootte */
-    height: 60px; /* Teruggebracht naar een kortere hoogte */
+    width: 120px;
+    height: 60px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     overflow: hidden;
@@ -304,23 +211,6 @@ body {
     box-sizing: border-box;
 }
 
-/* Media query voor mobiel */
-@media screen and (max-width: 768px) {
-    .opleiding {
-        padding: 80px 0 40px 0;
-    }
-
-    .opleiding h2 {
-        font-size: 2rem;
-        margin-bottom: 30px;
-    }
-
-    .opleiding-txt {
-        padding: 0 15px;
-        font-size: 0.95rem;
-        line-height: 1.6;
-    }
-}
 
 /*css voor vaardigheden stukje*/
 
@@ -340,9 +230,9 @@ body {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
-    gap: 40px; /* Verkleinde gap om de boxen dichter bij elkaar te zetten */
+    gap: 40px;
     align-items: flex-start;
-    margin-bottom: 80px; /* Extra ruimte tussen de boxen en de balkjes */
+    margin-bottom: 80px;
 }
 
 .vaardigheid {
@@ -387,7 +277,7 @@ body {
     color: #444;
     width: auto;
     text-align: left;
-    margin-left: 250px; /* Zorgt ervoor dat de tekst dichter bij de balk komt */
+    margin-left: 250px;
 }
 .skill-bar {
     background-color: #ddd;
@@ -395,7 +285,7 @@ body {
     border-radius: 5px;
     overflow: hidden;
     position: relative;
-    margin: 0 250px; /* Aangepaste marges voor betere uitlijning met de tekst */
+    margin: 0 250px;
 }
 .skill-fill {
     background-color: #4682B4;
@@ -404,60 +294,7 @@ body {
 }
 
 
-@media screen and (max-width: 768px) {
-    /* Bestaande mobile styles behouden... */
 
-    .vaardigheden-lijst {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); /* 2 kolommen */
-        gap: 15px; /* Kleinere ruimte tussen boxes */
-        padding: 0 15px; /* Padding aan de zijkanten */
-    }
-
-    .vaardigheid {
-        width: 100%;
-        aspect-ratio: 1/1; /* Dit zorgt voor vierkante boxes */
-        min-height: unset;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-        height: 150px; /* Vaste hoogte voor alle boxes */
-    }
-
-    .vaardigheid h3 {
-        font-size: 1rem; /* Iets kleinere tekst */
-        margin-bottom: 8px;
-    }
-
-    .vaardigheid p {
-        font-size: 0.9rem;
-        padding: 0 10px;
-        text-align: center;
-    }
-
-    /* Skills balkjes aanpassen */
-    .skill {
-        margin: 0 15px 15px 15px;
-    }
-
-    .skill span {
-        margin-left: 0;
-        text-align: left;
-        display: block;
-        margin-bottom: 5px;
-    }
-
-    .skill-bar {
-        margin: 0;
-        width: 100%;
-    }
-}
-
-
-
-/* CSS voor projecten sectie */
 .projecten {
     background-color: #d6d5d1;
     padding: 100px 0;
@@ -473,13 +310,13 @@ body {
 .projecten-container {
     display: flex;
     justify-content: center;
-    gap: 100px; /* Grotere afstand tussen de projecten */
+    gap: 100px;
 }
 
 .project {
     position: relative;
-    width: 400px; /* Grotere breedte */
-    height: 300px; /* Grotere hoogte */
+    width: 400px;
+    height: 300px;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -487,8 +324,8 @@ body {
 }
 .project {
     position: relative;
-    width: 400px; /* Grotere breedte */
-    height: 300px; /* Grotere hoogte */
+    width: 400px;
+    height: 300px;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -528,25 +365,7 @@ body {
     opacity: 1;
 }
 
-@media screen and (max-width: 768px) {
 
-    .projecten-container {
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-    }
-
-    .project {
-        width: 90%;
-        height: 350px;
-    }
-
-    .project .overlay p {
-        font-size: 0.9rem;
-        line-height: 1.4;
-        padding: 15px;
-    }
-}
 
 /* CSS voor contact sectie */
 .contact {
@@ -610,8 +429,180 @@ body {
     height: 50px;
 }
 
+
+/*alle mobile(responsive) shit bij elkaar zetten*/
+
 @media screen and (max-width: 768px) {
 
+/*navbar*/
+    .max-width {
+        padding: 0 15px;
+    }
+
+    .home-inhoud {
+        width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .home-inhoud h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .boxes {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .box {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .menu {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .max-width {
+        padding: 0 20px;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .menu {
+        position: fixed;
+        top: 60px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 60px);
+        background-color: #333;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        margin: 0;
+        padding: 20px 0;
+        transition: all 0.3s ease;
+    }
+
+    .menu.active {
+        left: 0;
+    }
+
+    .menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu li a {
+        display: block;
+        padding: 15px 0;
+    }
+
+    /* Hamburger menu animation */
+    .menu-btn.active .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .menu-btn.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-btn.active .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+
+    /*opleiding sectie*/
+    .opleiding {
+        padding: 80px 0 40px 0;
+    }
+
+    .opleiding h2 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .opleiding-txt {
+        padding: 0 15px;
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+/*vaardigheden sectie*/
+
+    .vaardigheden-lijst {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 0 15px;
+    }
+
+    .vaardigheid {
+        width: 100%;
+        aspect-ratio: 1/1;
+        min-height: unset;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        height: 150px;
+    }
+
+    .vaardigheid h3 {
+        font-size: 1rem;
+        margin-bottom: 8px;
+    }
+
+    .vaardigheid p {
+        font-size: 0.9rem;
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    .skill {
+        margin: 0 15px 15px 15px;
+    }
+
+    .skill span {
+        margin-left: 0;
+        text-align: left;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .skill-bar {
+        margin: 0;
+        width: 100%;
+    }
+
+/*projecten sectie*/
+
+    .projecten-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .project {
+        width: 90%;
+        height: 350px;
+    }
+
+    .project .overlay p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+        padding: 15px;
+    }
+
+/*overmij sectie*/
     .contact {
         padding: 80px 20px;
     }
@@ -650,13 +641,8 @@ body {
         padding: 12px 20px;
         margin-top: 20px;
     }
-}
 
-
-
-
-@media screen and (max-width: 768px) {
-
+/*secties full screen*!*/
 
     .home,
     .opleiding,
@@ -682,27 +668,4 @@ body {
         height: auto;
         padding-bottom: 40px;
     }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*alle mobile(responsive) shit bij elkaar zetten*/
-
-@media screen and (max-width: 768px) {
-
-
-
-
-
 }
