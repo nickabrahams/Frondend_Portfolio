@@ -455,6 +455,7 @@ body {
         flex-direction: column;
         align-items: center;
         width: 100%;
+
     }
 
     .box {
@@ -659,6 +660,11 @@ body {
 
 
     .home {
+        background-image: url('project_frontend_img/home_background_phone.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 100vh;
         padding-top: 80px;
     }
 
