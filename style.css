@@ -14,6 +14,10 @@ body {
     overflow-x: hidden;
 }
 
+body.modal-open {
+    overflow: hidden;
+}
+
 /* SCROLLBAR */
 ::-webkit-scrollbar {
     width: .7em;
@@ -291,11 +295,14 @@ body {
 .project-modal {
     position: fixed;
     inset: 0;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.85);
     display: none;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     z-index: 2000;
+    overflow-y: auto;
+    padding: 40px 15px;
+    -webkit-overflow-scrolling: touch;
 }
 
 .project-modal.active {
@@ -304,11 +311,13 @@ body {
 
 .modal-content {
     background: white;
-    width: 90%;
+    width: 100%;
     max-width: 900px;
-    border-radius: 12px;
+    border-radius: 15px;
     padding: 30px;
     position: relative;
+    margin: auto;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
 }
 
 .modal-close {
@@ -334,12 +343,33 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-/* On mobile, always single column */
 @media (max-width: 768px) {
 
+    /* On mobile, always single column */
     .modal-media.dual-media,
     .modal-media.triple-media {
         grid-template-columns: 1fr;
+    }
+
+    .project-modal {
+        padding: 20px 10px;
+    }
+
+    .modal-content {
+        padding: 45px 20px 25px;
+        border-radius: 12px;
+    }
+
+    .modal-media img,
+    .modal-media iframe {
+        height: 250px !important;
+    }
+
+    .project-modal[data-current-project="hobbies"] .modal-media img {
+        width: 100% !important;
+        max-width: 300px;
+        height: auto !important;
+        aspect-ratio: 1/1;
     }
 }
 

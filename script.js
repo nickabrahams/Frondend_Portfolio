@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
         hobbies: {
             title: "Hobby's",
             image: "project_frontend_img/hobbys/IMG_8240.JPG",
-            description: "In mijn vrije tijd sport ik regelmatig en ga ik meerdere keren per week naar de sportschool. Daarnaast speel ik tennis en vind ik het leuk om te koken. Sporten en koken zijn voor mij belangrijke manieren om actief en creatief bezig te zijn.<br><br><br>",
+            description: "In mijn vrije tijd sport ik regelmatig en ga ik meerdere keren per week naar de sportschool.<br>Daarnaast speel ik tennis en vind ik het leuk om te koken. Sporten en koken zijn voor mij belangrijke manieren om actief en creatief bezig te zijn.<br><br><br>",
             github: "",
             youtube: ""
         },
@@ -225,6 +225,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             modal.classList.add('active');
+            document.body.classList.add('modal-open');
         });
     });
 
@@ -233,6 +234,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ================================ */
     function closeModal() {
         modal.classList.remove('active');
+        document.body.classList.remove('modal-open');
         modalVideo.src = ""; // stopt YouTube video
     }
 
@@ -286,6 +288,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (isHomeBox && img.src) {
                 lightboxImg.src = img.src;
                 lightbox.classList.add('active');
+                document.body.classList.add('modal-open');
             }
         });
     });
@@ -294,6 +297,10 @@ document.addEventListener('DOMContentLoaded', () => {
     function closeLightbox() {
         if (lightbox && lightbox.classList.contains('active')) {
             lightbox.classList.remove('active');
+            // Alleen modal-open verwijderen als de gewone modal NIET open is
+            if (!modal.classList.contains('active')) {
+                document.body.classList.remove('modal-open');
+            }
             setTimeout(() => { lightboxImg.src = ""; }, 300);
         }
     }
