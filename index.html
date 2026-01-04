@@ -1,191 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nick Abrahams</title>
+    <!--    <link rel="website icon" type="png" href="">-->
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
+
 <body>
-<nav class="navigatie">
-    <div class="max-width">
-        <div class="logo"><a href="#">Nick Abrahams</a></div>
-        <div class="menu-btn">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
+    <nav class="navigatie">
+        <div class="max-width">
+            <div class="logo"><a href="#">Nick Abrahams</a></div>
+            <div class="menu-btn">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="menu">
+                <li><a href="#overmij">Over Mij</a></li>
+                <li><a href="#opleiding">Opleiding</a></li>
+                <li><a href="#vaardigheden">Vaardigheden</a></li>
+                <li><a href="#projecten">Projecten</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
-        <ul class="menu">
-            <li><a href="#overmij">Over Mij</a></li>
-            <li><a href="#opleiding">Opleiding</a></li>
-            <li><a href="#vaardigheden">Vaardigheden</a></li>
-            <li><a href="#projecten">Projecten</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
-</nav>
+    </nav>
 
 
-<!--html voor de thuis pagina-->
-<section class="home" id="overmij">
-<!--    <div class="max-width">-->
+    <!--html voor de thuis pagina-->
+    <section class="home" id="overmij">
+        <!--    <div class="max-width">-->
         <div class="home-inhoud">
             <h1>Hallo, Ik ben Nick.</h1>
-            <!--            <p>Dit is mijn portfolio!</p>-->
-            <!--            <p class="test_123"></p>-->
             <div class="boxes">
-                <div class="box">
-                    <h2>Over Mij</h2>
-                    <div class="info">
-                        <p>Ik ben Nick,<br> 18 jaar oud en kom uit Beverwijk.<br> ik woon samen met mijn vader, moeder en 3 broertjes.<br>
-                            In mijn vrije tijd ben ik graag met vrienden, ook sport en werk ik.
-                        </p>
-                    </div>
+                <div class="box" data-project="over-mij">
+                    <h2>Over mij</h2>
+                    <div class="click-info">Klik voor meer</div>
                 </div>
-                <div class="box">
+                <div class="box" data-project="hobbies">
                     <h2>Hobby's</h2>
-                    <div class="info">
-                        <p>Ik zit sins mijn 6e op scouting, dit vind ik erg leuk omdat ik het nogsteeds met dezelfde mensen doe.<br>
-                            Ook sport ik graag, ik ga 4keer per week naar de sportschool,<br>
-                            maar ik vind boulderen en hardlopen ook erg leuk!</p>
-                    </div>
+                    <div class="click-info">Klik voor meer</div>
                 </div>
-                <div class="box">
+                <div class="box" data-project="werk">
                     <h2>Werk</h2>
-                    <div class="info">
-                        <p>Ik werk nu 4 jaar bij de Albert Heijn als vakkenvuller.<br>
-                            Daarnaast heb ik afgelopen 2 zomers in de keuken gewerkt bij strand paviljoen de Vrijheit in Heemskerk</p>
-                    </div>
+                    <div class="click-info">Klik voor meer</div>
                 </div>
             </div>
         </div>
-<!--    </div>-->
-</section>
+    </section>
 
-<section class="opleiding" id="opleiding">
-    <div class="max-width">
-        <h2>Opleiding</h2>
-        <div class="opleiding-txt">
-            <p>Op dit moment volg ik de opleiding Software Developer aan het Nova College in Beverwijk. Dit is een mbo-4-opleiding, ik zit nu in mijn tweede jaar.<br>
-                Ik heb deze opleiding gekozen omdat ik al lange tijd geïnteresseerd ben in computers, software en alles wat daarmee te maken heeft.<br>
-                Voordat ik aan deze opleiding begon, had ik nog nooit iets gedaan met programmeren. Ik vind de opleiding erg leuk en uitdagend, omdat elk project anders is en iedere programmeertaal zijn eigen uitdagingen heeft.<br><br><br></p>
+    <section class="opleiding" id="opleiding">
+        <div class="max-width">
+            <h2>Opleiding</h2>
+            <div class="opleiding-txt">
+                <p>Op dit moment volg ik de opleiding Software Developer aan het Nova College in Beverwijk. Dit is een
+                    mbo-4-opleiding, ik zit nu in mijn tweede jaar.<br>
+                    Ik heb deze opleiding gekozen omdat ik al lange tijd geïnteresseerd ben in computers, software en
+                    alles wat daarmee te maken heeft.<br>
+                    Voordat ik aan deze opleiding begon, had ik nog nooit iets gedaan met programmeren. Ik vind de
+                    opleiding erg leuk en uitdagend, omdat elk project anders is en iedere programmeertaal zijn eigen
+                    uitdagingen heeft.<br><br><br></p>
 
+            </div>
+        </div>
+    </section>
+
+
+    <section class="vaardigheden" id="vaardigheden">
+        <h2>Vaardigheden</h2>
+        <div class="vaardigheden-lijst">
+            <!-- Boxen -->
+            <div class="vaardigheid">
+                <h3>HTML/CSS</h3>
+                <p>webontwikkeling en styling.</p>
+            </div>
+            <div class="vaardigheid">
+                <h3>PHP</h3>
+                <p>Backend-functionaliteiten maken en databasebeheer.</p>
+            </div>
+            <div class="vaardigheid">
+                <h3>JavaScript</h3>
+                <p>interactieve en dynamische elementen aan websites toevoegen.</p>
+            </div>
+            <div class="vaardigheid">
+                <h3>C#</h3>
+                <p>objectgeoriënteerd programmeren.</p>
+            </div>
+        </div>
+        <!-- Vaardigheidsbalkjes -->
+        <div class="balkjes">
+            <div class="skill">
+                <span>HTML/CSS</span>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width: 95%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>JavaScript</span>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width: 40%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>PHP</span>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width: 70%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>Python</span>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width: 60%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projecten" id="projecten">
+        <h2>Recente Projecten</h2>
+
+        <!-- Eerste 3 projecten -->
+        <div class="projecten-container">
+            <!--        <div class="project-card" data-project="pokemon">-->
+            <!--            <img src="project_frontend_img/javascript_screenshot.png" alt="">-->
+            <!--            <h3>Pokémon API</h3>-->
+            <!--            <p>JavaScript • API</p>-->
+            <!--        </div>-->
+            <div class="project-card" data-project="flutter">
+                <img src="project_frontend_img/flutter_placeholder.png" alt="">
+                <h3>Weer App</h3>
+                <p>Dart • Flutter</p>
+            </div>
+
+            <div class="project-card" data-project="pokemon">
+                <img src="project_frontend_img/javascript_screenshot.png" alt="">
+                <h3>Pokémon API</h3>
+                <p>JavaScript • API</p>
+            </div>
+
+            <div class="project-card" data-project="pygame">
+                <img src="project_frontend_img/pygame_img.png" alt="">
+                <h3>Pygame</h3>
+                <p>Python • Game</p>
+            </div>
+        </div>
+
+        <!-- EXTRA PROJECTEN (VERBORGEN) -->
+        <div class="extra-projecten hidden" id="extraProjecten">
+            <div class="project-card" data-project="csharp">
+                <img src="project_frontend_img/C%23_screenshot_3.png" alt="">
+                <h3>Voorraadbeheer</h3>
+                <p>C# • Desktop</p>
+            </div>
+
+            <div class="project-card" data-project="project5">
+                <img src="project_frontend_img/normaliseren%20frontend.png" alt="">
+                <h3>Normaliseren & Databaseontwerp</h3>
+                <p>SQL • Database</p>
+            </div>
+
+            <div class="project-card" data-project="project3">
+                <img src="project_frontend_img/Python-logo-1024x576.png" alt="">
+                <h3>Python Cursus</h3>
+                <p>Python • Cursus</p>
+            </div>
+        </div>
+
+        <!-- BUTTON STAAT HIER -->
+        <button id="bekijkMeerBtn" class="bekijk-meer-btn">
+            Bekijk meer
+        </button>
+
+    </section>
+    <div class="project-modal" id="projectModal">
+        <div class="modal-content">
+            <span class="modal-close" id="modalClose">&times;</span>
+
+            <h2 id="modalTitle"></h2>
+
+            <div class="modal-media" id="modalMedia">
+                <img id="modalImage" src="" alt="" style="display: none;">
+                <img id="modalImage2" src="" alt="" style="display: none;">
+                <img id="modalImage3" src="" alt="" style="display: none;">
+                <iframe id="modalVideo" src="" frameborder="0" allowfullscreen>
+                </iframe>
+            </div>
+
+            <p id="modalDescription"></p>
+
+            <div class="modal-buttons">
+                <a id="modalGithub" href="#" target="_blank" class="github-btn">
+                    Bekijk op GitHub
+                </a>
+            </div>
         </div>
     </div>
-</section>
 
 
-<section class="vaardigheden" id="vaardigheden">
-    <h2>Vaardigheden</h2>
-    <div class="vaardigheden-lijst">
-        <!-- Boxen -->
-        <div class="vaardigheid">
-            <h3>HTML/CSS</h3>
-            <p>webontwikkeling en styling.</p>
+    <section class="contact" id="contact">
+        <h2>Neem Contact Op</h2>
+        <div class="contact-container">
+            <!-- Contact details -->
+            <div class="contact-item">
+                <img src="project_frontend_img/phone-icon.png" alt="Telefoon">
+                <!--            <span>+31 6 26404686</span>-->
+                <a href="tel:0626404686">+31 6 26404686</a>
+            </div>
+            <div class="contact-item">
+                <img src="project_frontend_img/email-icon.png" alt="Email">
+                <a href="mailto:nabrahams274@student.novacollege.nl">nabrahams274@student.novacollege.nl</a>
+            </div>
+
+
+            <!-- Download CV knop -->
+            <div>
+                <a class="download-cv" href="Nick-Abrahams-cv-2025.pdf" download="Nick-Abrahams-CV">Download CV</a>
+            </div>
         </div>
-        <div class="vaardigheid">
-            <h3>PHP</h3>
-            <p>Backend-functionaliteiten maken en databasebeheer.</p>
-        </div>
-        <div class="vaardigheid">
-            <h3>JavaScript</h3>
-            <p>interactieve en dynamische elementen aan websites toevoegen.</p>
-        </div>
-        <div class="vaardigheid">
-            <h3>C#</h3>
-            <p>objectgeoriënteerd programmeren.</p>
-        </div>
+    </section>
+
+
+
+    <!-- Lightbox voor afbeeldingen (alleen voor Home Boxes) -->
+    <div id="imageLightbox" class="image-lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img id="lightboxImg" src="" alt="">
     </div>
-    <!-- Vaardigheidsbalkjes -->
-    <div class="balkjes">
-        <div class="skill">
-            <span>HTML/CSS</span>
-            <div class="skill-bar">
-                <div class="skill-fill" style="width: 70%;"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <span>JavaScript</span>
-            <div class="skill-bar">
-                <div class="skill-fill" style="width: 40%;"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <span>PHP</span>
-            <div class="skill-bar">
-                <div class="skill-fill" style="width: 55%;"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <span>C#</span>
-            <div class="skill-bar">
-                <div class="skill-fill" style="width: 25%;"></div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="projecten" id="projecten">
-    <h2>Recente Projecten</h2>
-    <div class="projecten-container">
-        <!-- Project 1 -->
-        <div class="project">
-            <img src="project_frontend_img/javascript_screenshot.png" alt="Screenshot van Project 1">
-            <div class="overlay">
-                <p>
-                    <b>JavaScript - Leerjaar 2</b><br>
-
-                    Dit was mijn eerste JavaScript-project.<br>
-                    Het doel van deze opdracht was om informatie op te halen uit een database en een API.<br>
-
-                    Hiervoor heb ik gebruikgemaakt van de PokéAPI, waarmee je informatie over alle Pokémon kunt ophalen.<br>
-                    Daarnaast heb ik ook een aantal Pokémon toegevoegd aan mijn eigen database.<br>
-
-                    Wanneer je een Pokémon opzoekt in de zoekbalk, wordt deze eerst opgehaald uit de database.<br>
-                    Als de Pokémon daar niet voorkomt, wordt hij opgehaald uit de API.<br>
-                    De informatie wordt teruggegeven in JSON-formaat en weergegeven op het scherm.<br>
-                </p>
-
-            </div>
-        </div>
-        <!-- Project 2 -->
-        <div class="project" id="project_2">
-            <img src="project_frontend_img/C%23_screenshot_3.png" alt="Screenshot van Project 2">
-            <div class="overlay">
-                <p><b>C# - Leerjaar 1</b> <br>
-
-                    In deze opdracht heb ik een applicatie gemaakt waarmee je de voorraad van smartphones kunt beheren.<br>
-
-                    Zodra je de applicatie opstart, wordt je gevraagd om in te loggen met een gebruikersnaam en wachtwoord.<br> Vervolgens zie je een lijst met de huidige voorraad van smartphones. Aan de rechterkant kun je nieuwe telefoons toevoegen of bestaande aanpassen.<br>
-                    <br>
-                    Ik vond deze opdracht erg uitdagend, omdat ik hier nog niet veel ervaring mee had.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="contact" id="contact">
-    <h2>Neem Contact Op</h2>
-    <div class="contact-container">
-        <!-- Contact details -->
-        <div class="contact-item">
-            <img src="project_frontend_img/phone-icon.png" alt="Telefoon">
-<!--            <span>+31 6 26404686</span>-->
-            <a href="tel:0626404686">+31 6 26404686</a>
-        </div>
-        <div class="contact-item">
-            <img src="project_frontend_img/email-icon.png" alt="Email">
-            <a href="mailto:nabrahams274@student.novacollege.nl">nabrahams274@student.novacollege.nl</a>
-        </div>
-
-
-        <!-- Download CV knop -->
-        <div>
-            <a class="download-cv" href="Nick-Abrahams-cv-2025.pdf" download="Nick-Abrahams-CV">Download CV</a>
-        </div>
-    </div>
-</section>
 
 </body>
+
 </html>
